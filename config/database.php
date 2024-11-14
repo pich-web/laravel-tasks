@@ -46,11 +46,11 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', AZURE_MYSQL_HOST),
-            'port' => env('DB_PORT', AZURE_MYSQL_PORT),
-            'database' => env('DB_DATABASE', AZURE_MYSQL_DBNAME),
-            'username' => env('DB_USERNAME', AZURE_MYSQL_USERNAME),
-            'password' => env('DB_PASSWORD', AZURE_MYSQL_PASSWORD),
+            'host' => env('DB_HOST', 'AZURE_MYSQL_HOST'),
+            'port' => env('DB_PORT', 'AZURE_MYSQL_PORT'),
+            'database' => env('DB_DATABASE', 'AZURE_MYSQL_DBNAME'),
+            'username' => env('DB_USERNAME', 'AZURE_MYSQL_USERNAME'),
+            'password' => env('DB_PASSWORD', 'AZURE_MYSQL_PASSWORD'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -139,11 +139,11 @@ return [
 
         'cache' => [
             'url' => env('REDIS_URL'),
-            'host' => env('REDIS_HOST', AZURE_REDIS_HOST),
+            'host' => env('REDIS_HOST', 'AZURE_REDIS_HOST'),
             'username' => env('REDIS_USERNAME'),
-            'password' => env('REDIS_PASSWORD', AZURE_REDIS_PASSWORD),
-            'port' => env('REDIS_PORT', AZURE_REDIS_PORT),
-            'database' => env('REDIS_CACHE_DB', AZURE_REDIS_DATABASE),
+            'password' => env('REDIS_PASSWORD', 'AZURE_REDIS_PASSWORD'),
+            'port' => env('REDIS_PORT', 'AZURE_REDIS_PORT'),
+            'database' => env('REDIS_CACHE_DB', 'AZURE_REDIS_DATABASE'),
             'scheme' => 'tls',
         ],
 
